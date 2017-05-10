@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Independent - Loyal Subscribers</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
+
+<body onload="unselectGifts()">
+    <header>
+        <img src="img/logo.png" class="logo" />
+    </header>
+    <div id="hero" class="Hero">
+        <div class="overlay">
+            <h2>SUBSCRIBER OFFERS</h2>
+            <div class="line hide"><img src="img/line1.png" /></div>
+            <p>Exclusive event invitation</p>
+        </div>
+        <div class="content">
+            <div class="line hide"><img src="img/line-no-shadow.png" /></div>
+            <h2><b>Free gift and exclusive event invitation</b></h2>
+            <div class="line bottom-pad  hide"><img src="img/line-no-shadow.png" /></div>
+            <p>As a token of our appreciation of your continuing loyalty and support of The Independent Daily Edition, we would like to offer you one of a selection of gifts detailed below.</p>
+            <p>We would also like to invite you to an exclusive evening event we are holding for our annual subscribers on the 19 July 2017 at the Royal Society of Arts in London. A panel of our leading journalists, led by editor Christian Broughton, will debate the ramifications of the Brexit vote. Members of the audience will be able to ask questions of the panel and there will be pre and post-debate refreshments. If you are interested in attending please make sure you tick the box at the bottom of the page, and we will send you further details nearer the time.</p>
+        </div>
+
+        <div id="gifts">
+            <h2><span class="red-bottom-border">Your</span> choice of complimentary ebook or front page poster</h2>
+            <p class="bottom-pad">Please select one from these free gift options:</p>
+
+            <ul id="gift-list">
+                <li id="item1">
+                    <img src="img/syria.png" />
+                    <p class="gift-name">Syria - Descent into the Abyss
+                    </p>
+                    <div id="select1">
+                        <span class="gift-type">ebook
+                        </span>
+                        <p id="select">SELECT</p>
+                    </div>
+                    <div id="deselect1">
+                        <span class="gift-type-selected">ebook
+                        </span>
+                        <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
+
+                    </div>
+                </li>
+                <li id="item2"><img src="img/arab_spring.png" />
+                    <p class="gift-name">Arab spring - Then and now
+                    </p>
+                    <div id="select2">
+                        <span class="gift-type">ebook
+                        </span>
+                        <p id="select">SELECT</p>
+                    </div>
+                    <div id="deselect2">
+                        <span class="gift-type-selected">ebook
+                        </span>
+                        <p id="select">SELECTED<img src="img/check.png" class="check" /</p>
+                    </div>
+                </li>
+                <li id="item3"><img src="img/48_hours.png" />
+                    <p class="gift-name">48 hours in... European capitals
+                    </p>
+                    <div id="select3">
+                        <span class="gift-type">ebook
+                        </span>
+                        <p id="select">SELECT</p>
+                    </div>
+                    <div id="deselect3">
+                        <span class="gift-type-selected">ebook
+                        </span>
+                        <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
+                    </div>
+
+                </li>
+                <li id="item4"><img src="img/terrorism.png" />
+                    <p class="gift-name">Terrorism in <br/>Europe
+                    </p>
+                    <div id="select4">
+                        <span class="gift-type">ebook
+                        </span>
+                        <p id="select">SELECT</p>
+                    </div>
+                    <div id="deselect4">
+                        <span class="gift-type-selected">ebook
+                        </span>
+                        <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
+                    </div>
+                </li>
+                <li id="item5"><img src="img/isreal.png" />
+                    <p class="gift-name">Robert Fisk on <br/>Israel
+                    </p>
+                    <div id="select5">
+                        <span class="gift-type">ebook
+                        </span>
+                        <p id="select">SELECT</p>
+                    </div>
+                    <div id="deselect5">
+                        <span class="gift-type-selected">ebook
+                        </span>
+                        <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
+                    </div>
+                </li>
+
+                <li id="item6"><img src="img/trump.png" />
+                    <p class="gift-name">Trump's Empire <br/>State'
+                    </p>
+                    <div id="select6">
+                        <span class="gift-type">A3 cover poster
+                        </span>
+                        <p id="select">SELECT</p>
+                    </div>
+                    <div id="deselect6">
+                        <span class="gift-type-selected">A3 cover poster
+                        </span>
+                        <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
+                    </div>
+                </li>
+                <li id="item7"><img src="img/ali.png" />
+                    <p class="gift-name">Muhammad Ali
+                    </p><br/>
+                    <div id="select7">
+                        <span class="gift-type">A3 cover poster
+                        </span>
+                        <p id="select">SELECT</p>
+                    </div>
+                    <div id="deselect7">
+                        <span class="gift-type-selected">A3 cover poster
+                        </span>
+                        <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
+                    </div>
+                </li>
+                <li id="item8"><img src="img/isis.png" />
+                    <p class="gift-name">ISIS Battling the Menace
+                    </p>
+                    <div id="select8">
+                        <span class="gift-type">A3 cover poster
+                        </span>
+                        <p id="select">SELECT</p>
+                    </div>
+                    <div id="deselect8">
+                        <span class="gift-type-selected">A3 cover poster
+                        </span>
+                        <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
+                    </div>
+                </li>
+                <li id="item9"><img src="img/remind.png" />
+                    <p class="gift-name">Remind you of anybody?
+                    </p>
+                    <div id="select9">
+                        <span class="gift-type">A3 cover poster
+                        </span>
+                        <p id="select">SELECT</p>
+                    </div>
+                    <div id="deselect9">
+                        <span class="gift-type-selected">A3 cover poster
+                        </span>
+                        <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
+                    </div>
+                </li>
+                <li id="item10"><img src="img/justice.png" />
+                    <p class="gift-name">Justice
+                    </p><br/>
+                    <div id="select10">
+                        <span class="gift-type">A3 cover poster
+                        </span>
+                        <p id="select">SELECT</p>
+                    </div>
+                    <div id="deselect10">
+                        <span class="gift-type-selected">A3 cover poster
+                        </span>
+                        <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
+                    </div>
+                </li>
+            </ul>
+
+            <p class="footnote">You will receive your free ebook via email in an iPad compatible format within 10 days of your renewal. If you choose a front page print, your poster will be sent to the address given in the form below within 30 days of your renewal date.
+            </p>
+        </div>
+        <div id="event">
+            <div class="content">
+                <p class="strap"><i>You are cordially invited to an exclusive event for</i></p>
+                <div class="line hide"><img src="img/line-no-shadow.png" /></div>
+                <h2>The Independent Daily Edition annual subscribers</h2>
+                <div class="line bottom-pad hide"><img src="img/line-no-shadow.png" /></div>
+                <p>Please join us for an evening of Brexit discussion and debate with our award-winning journalists and editor of The Independent, Christian Broughton.</p>
+                <nav>
+                    <ul class="event-details">
+                        <li id="event-details-box">
+                            <div class="left">
+                                <img src="img/pin.png" />
+                            </div>
+                            <div class="left">
+                                <p class="details"><a href="https://www.thersa.org/contact" target="_blank" class="no-link-style">RSA House, <br/>8 John Adam Street,<br/> London <br/>WC2N 6EZ</a></p>
+                            </div>
+                        </li>
+                        <li id="event-details-box1">
+                            <div class="left">
+                                <img src="img/calendar.png" />
+                            </div>
+                            <div class="left">
+                                <p class="details">19 July 2017</p>
+                            </div>
+                        </li>
+                        <li id="event-details-box2">
+                            <div class="left">
+                                <img src="img/clock.png" />
+                            </div>
+                            <div class="left">
+                                <p class="details">6.30 - 9.30 pm</p>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="speakers-strap"><i>Panellists include</i></p>
+                <nav>
+                    <ul class="speakers">
+                        <li id="event-box">
+                            <div class="speaker-text">
+                                <h2>John <br/>Rentoul</h2>
+                                <p class="speaker-text"><i>Chief political correspondent</i></p>
+                            </div>
+                        </li>
+                        <li id="event-box">
+                            <div class="speaker-text">
+                                <h2>Matthew Norman</h2>
+                                <p class="speaker-text"><i>Political columnist</i></p>
+                            </div>
+                        </li>
+                        <li id="event-box">
+                            <div class="speaker-text">
+                                <h2>Mate Maltsby</h2>
+                                <p class="speaker-text"><i>Commentator</i></p>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="form">
+            <div class="content">
+                <h2><span class="red-bottom-border">Your</span> details</h2>
+                <p>Please enter your Independent Daily Edition subscription details.</p>
+                <p class="bottom-pad">Your telephone number will only be used in relation to your subscription, the offer or event.</p>
+                <div class="form-style-2">
+
+                    <form action="submit.php" method="post" id="giftform">
+                        <label for="first_name"><span>First Name </span><input type="text" class="input-field" id="first_name" name="first_name"value="" required/></label>
+                        <label for="last_name"><span>Surname </span><input type="text" class="input-field" id="last_name" name="last_name" value="" required/></label>
+                        <label for="email"><span>Email Address </span><input type="email" class="input-field" id="email" name="email" value="" required /></label>
+                        <label for="phone"><span>Phone Number </span><input type="number" class="input-field" id="phone" name="phone" value="" required/></label>
+                        <label for="house_name_number"><span>House Name/Number </span><input type="text" class="input-field" id="house_name_number" name="house_name_number" value="" required/></label>
+                        <label for="street"><span>Street </span><input type="text" class="input-field" id="street" name="street" value="" required/></label>
+                        <label for="town_city"><span>Town or City </span><input type="text" class="input-field" id="town_city" name="town_city" value="" required/></label>
+                        <label for="postcode"><span>Postcode </span><input type="text" class="input-field" id="postcode" name="postcode" value="" required/></label>
+
+
+                        <div id="error" class="hide">
+
+                        </div>
+
+
+                        <div class="terms">
+                            <input type="checkbox" id="travel_check" name="interested_event" value="Yes"/>
+                            <label for="travel_check" class="check-box">I am interested in attending the exclusive Independent Daily Edition annual subscriber event at RSA on 19 July 2017.</label>
+                        </div>
+                        <div class="submit">
+                            <label><span>&nbsp;</span><input type="submit" id="Submit" name="submit" value="Submit" onclick="validateGiftAndTerms()" /></label>
+                        </div>
+
+
+                        <div class="terms-text">*This offer is available to existing annual subscribers to the Independent Daily Edition app who renew their Subscription for a further 12 month period. The offer will expire on 9 July 2017. This offer cannot be combined with any other promotion and there is no cash alternative. Your free gift will not be dispatched until the funds for your renewal have cleared. Delivery to UK addresses only (excluding Channel Islands).
+                        </div>
+
+                        <ul id="prices-wrap-radio-list">
+                            <li>
+                                <input type="radio" value="ebook - Syria - Descent into the Abyss" id="eBook - Syria - Descent into the Abyss" name="Gift" data-price-id="1" required value="1">
+                                <label for="eBook - Syria - Descent into the Abyss">eBook - Syria - Descent into the Abyss</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="ebook - Arab spring - Then and now" id="eBook - Arab spring - Then and now" name="Gift" data-price-id="2">
+                                <label for="eBook - Arab spring - Then and now">eBook - Arab spring - Then and now</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="eBook - 48 Hours in European Capitals" id="eBook - 48 Hours in European Capitals" name="Gift" data-price-id="3">
+                                <label for="eBook - 48 Hours in European Capitals">eBook - 48 Hours in European Capitals</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="ebook - Terrorism in Europe" id="eBook - Terrorism in Europe" name="Gift" data-price-id="4">
+                                <label for="eBook - Terrorism in Europe">eBook - Terrorism in Europe</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="ebook - Robert Fisk on Israel" id="eBook - Robert Fisk on Israel" name="Gift" data-price-id="5">
+                                <label for="eBook - Robert Fisk on Israel">eBook - Robert Fisk on Israel</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="A3 cover poster - Trump's Empire State" id="A3 Cover Print - Trump's Empire State" name="Gift" data-price-id="6">
+                                <label for="A3 Cover Print - Trump's Empire State">A3 Cover Print - Trump's Empire State</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="A3 cover poster - Muhammad Ali" id="A3 Cover Print - Muhammad Ali" name="Gift" data-price-id="7">
+                                <label for="A3 Cover Print - Muhammad Ali">A3 Cover Print - Muhammad Ali</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="A3 cover poster - ISIS Battling the Menace" id="A3 Cover Print - Isis: Battling the terror" name="Gift" data-price-id="8">
+                                <label for="A3 Cover Print - ISIS Battling the Menace">A3 Cover Print - ISIS Battling the Menace</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="A3 cover poster - Remind you of anybody?" id="A3 Cover Print - Remind you of anybody?" name="Gift" data-price-id="9">
+                                <label for="A3 Cover Print - Remind you of anybody?">A3 Cover Print - Remind you of anybody?</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="A3 cover poster - Justice" id="A3 Cover Print - Justice" name="Gift" data-price-id="10">
+                                <label for="A3 Cover Print - Justice">A3 Cover Print - Justice</label>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="footer-line"></div>
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <div class="small-div">
+                            <img src="img/indy-logo.svg" width="80" height="80">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <ul class="follow">
+                            <li>Follow us:</li>
+                            <li>
+                                <a href="https://www.facebook.com/TheIndependentOnline" class="icon-facebook" target="_blank">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                                        <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com/independent" class="icon-twitter" target="_blank">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                                        <path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <ul class="links">
+                            <li><a href="http://www.independent.co.uk/service/user-policies-a6184151.html">User Policy</a></li>
+                            <li><a href="http://www.independent.co.uk/service/privacy-policy-a6184181.html">Privacy Policy</a></li>
+                            <li><a href="http://www.independent.co.uk/service/cookie-policy-a6184186.html">Cookie Policy</a></li>
+                            <li><a href="http://www.independent.co.uk/service/code-of-conduct-a6184241.html">Code of Conduct</a></li>
+                            <!-- </ul>
+                            <ul class="links"> -->
+                            <li><a href="http://www.independent.co.uk/service/external-contributors-policy-7905982.html">Contributors</a></li>
+                            <li><a href="http://www.independent.co.uk/topics-list">All Topics</a></li>
+                            <li><a href="http://www.independent.co.uk/archive">Archive</a></li>
+                            <li><a href="http://www.independent.co.uk/register">Newsletters</a></li>
+                            <!-- </ul>
+                            <ul class="links"> -->
+                            <li><a href="http://esimedia.co.uk/">Advertising Guide</a></li>
+                            <li><a href="http://syndication.independent.co.uk/">Syndication</a></li>
+                            <li><a href="http://www.standard.co.uk/">Evening Standard</a></li>
+                            <li><a href="http://en.novayagazeta.ru">Novaya Gazeta</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </footer>
+</body>
+
+</html>
