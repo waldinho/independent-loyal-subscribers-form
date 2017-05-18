@@ -11,6 +11,15 @@
     <script src="js/scripts.js"></script>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Fira Sans', 'Roboto Serif']
+        }
+      });
+    </script>
 </head>
 
 <body onload="unselectGifts()">
@@ -25,20 +34,20 @@
         </div>
         <div class="content">
             <div class="line hide"><img src="img/line-no-shadow.png" /></div>
-            <h2><b>Free gift and exclusive event invitation</b></h2>
+            <h2>Free gift and exclusive event invitation</h2>
             <div class="line bottom-pad  hide"><img src="img/line-no-shadow.png" /></div>
-            <p>As a token of our appreciation of your continuing loyalty and support of The Independent Daily Edition, we would like to offer you one of a selection of gifts detailed below.</p>
-            <p>We would also like to invite you to an exclusive evening event we are holding for our annual subscribers on the 19 July 2017 at the Royal Society of Arts in London. A panel of our leading journalists, led by editor Christian Broughton, will debate the ramifications of the Brexit vote. Members of the audience will be able to ask questions of the panel and there will be pre and post-debate refreshments. If you are interested in attending please make sure you tick the box at the bottom of the page, and we will send you further details nearer the time.</p>
+            <p>As a token of our appreciation of your continuing loyalty and support of <i>The Independent</i> Daily Edition, we would like to offer you one of a selection of gifts detailed below.</p>
+            <p>We would also like to invite you to an exclusive evening event we are holding for our annual subscribers on Wednesday 19 July 2017 at the Royal Society of Arts in London. A panel of our leading journalists, led by editor Christian Broughton, will debate the ramifications of the general election and Brexit vote. Members of the audience will be able to ask questions of the panel and there will be pre- and post- debate refreshments. If you are interested in attending please make sure you tick the box at the bottom of the page, and we will send you further details nearer the time.</p>
         </div>
 
         <div id="gifts">
-            <h2><span class="red-bottom-border">Your</span> choice of complimentary ebook or front page poster</h2>
+            <h2><span class="red-bottom-border">Your</span> choice of complimentary ebook or front-page poster</h2>
             <p class="bottom-pad">Please select one from these free gift options:</p>
 
             <ul id="gift-list">
                 <li id="item1">
                     <img src="img/syria.png" />
-                    <p class="gift-name">Syria - Descent into the Abyss
+                    <p class="gift-name">Syria: Descent Into the Abyss
                     </p>
                     <div id="select1">
                         <span class="gift-type">ebook
@@ -53,7 +62,7 @@
                     </div>
                 </li>
                 <li id="item2"><img src="img/arab_spring.png" />
-                    <p class="gift-name">Arab spring - Then and now
+                    <p class="gift-name">Arab Spring Then and Now
                     </p>
                     <div id="select2">
                         <span class="gift-type">ebook
@@ -67,7 +76,7 @@
                     </div>
                 </li>
                 <li id="item3"><img src="img/48_hours.png" />
-                    <p class="gift-name">48 hours in... European capitals
+                    <p class="gift-name">48 Hours in... European Capitals
                     </p>
                     <div id="select3">
                         <span class="gift-type">ebook
@@ -111,15 +120,15 @@
                 </li>
 
                 <li id="item6"><img src="img/trump.png" />
-                    <p class="gift-name">Trump's Empire <br/>State'
+                    <p class="gift-name">Trump's Empire <br/>State
                     </p>
                     <div id="select6">
-                        <span class="gift-type">A3 cover poster
+                        <span class="gift-type">A3 front-page poster
                         </span>
                         <p id="select">SELECT</p>
                     </div>
                     <div id="deselect6">
-                        <span class="gift-type-selected">A3 cover poster
+                        <span class="gift-type-selected">A3 front-page poster
                         </span>
                         <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
                     </div>
@@ -128,12 +137,12 @@
                     <p class="gift-name">Muhammad Ali
                     </p><br/>
                     <div id="select7">
-                        <span class="gift-type">A3 cover poster
+                        <span class="gift-type">A3 front-page poster
                         </span>
                         <p id="select">SELECT</p>
                     </div>
                     <div id="deselect7">
-                        <span class="gift-type-selected">A3 cover poster
+                        <span class="gift-type-selected">A3 front-page poster
                         </span>
                         <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
                     </div>
@@ -142,12 +151,12 @@
                     <p class="gift-name">ISIS Battling the Menace
                     </p>
                     <div id="select8">
-                        <span class="gift-type">A3 cover poster
+                        <span class="gift-type">A3 front-page poster
                         </span>
                         <p id="select">SELECT</p>
                     </div>
                     <div id="deselect8">
-                        <span class="gift-type-selected">A3 cover poster
+                        <span class="gift-type-selected">A3 front-page poster
                         </span>
                         <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
                     </div>
@@ -156,12 +165,12 @@
                     <p class="gift-name">Remind you of anybody?
                     </p>
                     <div id="select9">
-                        <span class="gift-type">A3 cover poster
+                        <span class="gift-type">A3 front-page poster
                         </span>
                         <p id="select">SELECT</p>
                     </div>
                     <div id="deselect9">
-                        <span class="gift-type-selected">A3 cover poster
+                        <span class="gift-type-selected">A3 front-page poster
                         </span>
                         <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
                     </div>
@@ -170,19 +179,19 @@
                     <p class="gift-name">Justice
                     </p><br/>
                     <div id="select10">
-                        <span class="gift-type">A3 cover poster
+                        <span class="gift-type">A3 front-page poster
                         </span>
                         <p id="select">SELECT</p>
                     </div>
                     <div id="deselect10">
-                        <span class="gift-type-selected">A3 cover poster
+                        <span class="gift-type-selected">A3 front-page poster
                         </span>
                         <p id="select">SELECTED<img src="img/check.png" class="check" /></p>
                     </div>
                 </li>
             </ul>
 
-            <p class="footnote">You will receive your free ebook via email in an iPad compatible format within 10 days of your renewal. If you choose a front page print, your poster will be sent to the address given in the form below within 30 days of your renewal date.
+            <p class="footnote">You will receive your free ebook via email in an iPad compatible format within 10 days of your renewal. If you choose a front-page print, your poster will be sent to the address given in the form below within 30 days of your renewal date.
             </p>
         </div>
         <div id="event">
@@ -191,7 +200,7 @@
                 <div class="line hide"><img src="img/line-no-shadow.png" /></div>
                 <h2>The Independent Daily Edition annual subscribers</h2>
                 <div class="line bottom-pad hide"><img src="img/line-no-shadow.png" /></div>
-                <p>Please join us for an evening of Brexit discussion and debate with our award-winning journalists and editor of The Independent, Christian Broughton.</p>
+                <p>Please join us for an evening of general election and Brexit discussion and debate with our award-winning journalists and editor of The Independent, Christian Broughton.</p>
                 <nav>
                     <ul class="event-details">
                         <li id="event-details-box">
@@ -207,7 +216,7 @@
                                 <img src="img/calendar.png" />
                             </div>
                             <div class="left">
-                                <p class="details">19 July 2017</p>
+                                <p class="details">Wednesday<br/> 19 July 2017</p>
                             </div>
                         </li>
                         <li id="event-details-box2">
@@ -237,7 +246,7 @@
                         </li>
                         <li id="event-box">
                             <div class="speaker-text">
-                                <h2>Mate Maltsby</h2>
+                                <h2>Kate Maltsby</h2>
                                 <p class="speaker-text"><i>Commentator</i></p>
                             </div>
                         </li>
@@ -272,12 +281,17 @@
                             <input type="checkbox" id="travel_check" name="interested_event" value="Yes"/>
                             <label for="travel_check" class="check-box">I am interested in attending the exclusive Independent Daily Edition annual subscriber event at RSA on 19 July 2017.</label>
                         </div>
+                         <div class="terms">
+                            <input type="checkbox" id="guest_check" name="guest" value="Yes"/>
+                            <label for="guest_check" class="check-box">Can I bring a guest?</label>
+                        </div>
                         <div class="submit">
                             <label><span>&nbsp;</span><input type="submit" id="Submit" name="submit" value="Submit" onclick="validateGiftAndTerms()" /></label>
                         </div>
 
 
-                        <div class="terms-text">*This offer is available to existing annual subscribers to the Independent Daily Edition app who renew their Subscription for a further 12 month period. The offer will expire on 9 July 2017. This offer cannot be combined with any other promotion and there is no cash alternative. Your free gift will not be dispatched until the funds for your renewal have cleared. Delivery to UK addresses only (excluding Channel Islands).
+                        <div class="terms-text">*This offer is available to existing annual subscribers to The Independent Daily Edition app who renew their Subscription for a further 12 month period. The offer is only available to subscribers who subscribed directly with The Independent, (excluding iTunes, Google Play and Amazon subscribers).<br/>
+                        The offer will expire on 9 July 2017. This offer cannot be combined with any other promotion and there is no cash alternative. Your free gift will be dispatched when the funds for your renewal have cleared. Delivery to UK addresses only (excluding Channel Islands).
                         </div>
 
                         <ul id="prices-wrap-radio-list">
@@ -302,24 +316,24 @@
                                 <label for="eBook - Robert Fisk on Israel">eBook - Robert Fisk on Israel</label>
                             </li>
                             <li>
-                                <input type="radio" value="A3 cover poster - Trump's Empire State" id="A3 Cover Print - Trump's Empire State" name="Gift" data-price-id="6">
-                                <label for="A3 Cover Print - Trump's Empire State">A3 Cover Print - Trump's Empire State</label>
+                                <input type="radio" value="A3 front-page poster - Trump's Empire State" id="A3 Cover Print - Trump's Empire State" name="Gift" data-price-id="6">
+                                <label for="A3 Cover Print - Trump's Empire State">A3 front-page poster - Trump's Empire State</label>
                             </li>
                             <li>
-                                <input type="radio" value="A3 cover poster - Muhammad Ali" id="A3 Cover Print - Muhammad Ali" name="Gift" data-price-id="7">
-                                <label for="A3 Cover Print - Muhammad Ali">A3 Cover Print - Muhammad Ali</label>
+                                <input type="radio" value="A3 front-page poster - Muhammad Ali" id="A3 Cover Print - Muhammad Ali" name="Gift" data-price-id="7">
+                                <label for="A3 Cover Print - Muhammad Ali">A3 front-page poster - Muhammad Ali</label>
                             </li>
                             <li>
-                                <input type="radio" value="A3 cover poster - ISIS Battling the Menace" id="A3 Cover Print - Isis: Battling the terror" name="Gift" data-price-id="8">
-                                <label for="A3 Cover Print - ISIS Battling the Menace">A3 Cover Print - ISIS Battling the Menace</label>
+                                <input type="radio" value="A3 front-page poster - ISIS Battling the Menace" id="A3 Cover Print - Isis: Battling the terror" name="Gift" data-price-id="8">
+                                <label for="A3 Cover Print - ISIS Battling the Menace">A3 front-page poster - ISIS Battling the Menace</label>
                             </li>
                             <li>
-                                <input type="radio" value="A3 cover poster - Remind you of anybody?" id="A3 Cover Print - Remind you of anybody?" name="Gift" data-price-id="9">
-                                <label for="A3 Cover Print - Remind you of anybody?">A3 Cover Print - Remind you of anybody?</label>
+                                <input type="radio" value="A3 front-page poster - Remind you of anybody?" id="A3 Cover Print - Remind you of anybody?" name="Gift" data-price-id="9">
+                                <label for="A3 Cover Print - Remind you of anybody?">A3 front-page poster - Remind you of anybody?</label>
                             </li>
                             <li>
-                                <input type="radio" value="A3 cover poster - Justice" id="A3 Cover Print - Justice" name="Gift" data-price-id="10">
-                                <label for="A3 Cover Print - Justice">A3 Cover Print - Justice</label>
+                                <input type="radio" value="A3 front-page poster - Justice" id="A3 Cover Print - Justice" name="Gift" data-price-id="10">
+                                <label for="A3 Cover Print - Justice">A3 front-page poster - Justice</label>
                             </li>
                         </ul>
                     </form>

@@ -1,7 +1,7 @@
 <?php 
 if(isset($_POST['submit'])){
     $to = 'james.waller@independent.co.uk';
-    $from = 'LOYAL_SUBSCRIBER_FORM'; // this is your Email address
+    $from = 'LOYALSUBSCRIBERFORM'; // this is your Email address
     $subject = 'Form submission from The Independent';
     $message .= 'First name: ' . $_POST['first_name'] . "\r\n";
     $message .= 'Surname: ' . $_POST['last_name'] . "\r\n\r\n";
@@ -12,6 +12,7 @@ if(isset($_POST['submit'])){
     $message .= $_POST['town_city'] . "\r\n";
     $message .= $_POST['postcode'] . "\r\n\r\n";
     $message .= 'Interested in Event?: ' . $_POST['interested_event'] . "\r\n\r\n";
+    $message .= 'Can I bring a guest?: ' . $_POST['guest'] . "\r\n\r\n";
     $message .= 'Gift: ' . $_POST['Gift'] . "\r\n\r\n";
     $headers .= 'From: LOYAL SUBSCRIBER FORM';
     // $success = echo "Hello World";
